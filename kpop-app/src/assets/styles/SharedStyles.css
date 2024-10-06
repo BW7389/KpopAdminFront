@@ -1,0 +1,57 @@
+/* src/assets/styles/SharedStyles.css */
+
+.kpop-input {
+    width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng của form */
+    padding: 12px;
+    margin-bottom: 15px; /* Khoảng cách giữa các input */
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.4s ease-in-out; /* Tăng thời gian và đổi easing */
+    width: -webkit-fill-available;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.kpop-input:focus {
+    outline: none;
+    border-color: #ff6ad5;
+    box-shadow: 0 0 15px rgba(255, 106, 213, 0.5); /* Hiệu ứng bóng mạnh hơn */
+    transform: scale(1.02); /* Tăng kích thước nhẹ khi focus */
+}
+
+.kpop-button {
+    background-color: #6a5aff;
+    color: white;
+    padding: 15px; /* Padding để nút lớn hơn */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng của form */
+    font-size: 16px;
+    transition: background-color 0.4s ease-in-out, transform 0.2s ease-in-out; /* Tăng thời gian và đổi easing */
+}
+
+.kpop-button:hover {
+    background-color: #ff6ad5;
+    transform: scale(1.03); /* Tăng kích thước nhẹ khi hover */
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    width: 100%; /* Đảm bảo login box chiếm toàn bộ chiều rộng */
+    max-width: 400px; /* Kích thước tối đa */
+    opacity: 0; /* Ẩn lúc đầu */
+    transform: translateY(-20px); /* Di chuyển lên nhẹ */
+    animation: fadeInUp 0.6s ease-in-out forwards; /* Hiệu ứng xuất hiện nhẹ nhàng hơn */
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
