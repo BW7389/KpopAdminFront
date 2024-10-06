@@ -1,0 +1,91 @@
+/* ImageManager.css */
+.image-manager {
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px; /* Set a max width for larger screens */
+    margin: 0 auto; /* Center the manager */
+}
+
+.image-manager h2 {
+    font-size: 28px; /* Increased font size for better emphasis */
+    margin-bottom: 30px; /* More space below the title */
+    color: #333; /* Darker color for better contrast */
+}
+
+.tab-list {
+    margin-bottom: 30px; /* Space below the tabs */
+}
+
+.image-manager button {
+    margin: 0 10px; /* Space between buttons */
+    padding: 10px 20px; /* Consistent padding */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff; /* Primary color for buttons */
+    color: white; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.image-manager button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.image-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
+    max-height: 600px; /* Set a maximum height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    padding-right: 10px; /* Optional: for better scroll visibility */
+}
+
+.image-card {
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #ddd; /* Light border for cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions for effects */
+}
+
+.image-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.image-card h3 {
+    font-size: 20px; /* Increased font size for titles */
+    margin: 10px 0;
+    color: #444; /* Darker color for better readability */
+}
+
+.image-card p {
+    margin: 0 0 15px;
+    color: #666; /* Lighter color for text */
+}
+
+.image-card button {
+    margin-right: 5px; /* Space between action buttons */
+    padding: 5px 10px;
+    background-color: #f0f0f0; /* Background color for action buttons */
+    color: #333; /* Dark text for action buttons */
+    border: 1px solid #ddd; /* Light border for action buttons */
+    border-radius: 5px; /* Rounded corners for action buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.image-card button:hover {
+    background-color: #e0e0e0; /* Darker shade on hover */
+}
+
+.image-preview {
+    width: 100%; /* Make image responsive */
+    max-height: 200px; /* Set a max height for uniformity */
+    border-radius: 8px; /* Match card's border radius */
+    margin-bottom: 10px; /* Space between image and title */
+    object-fit: cover; /* Maintain aspect ratio, fill the area */
+}

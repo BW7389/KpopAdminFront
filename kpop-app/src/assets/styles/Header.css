@@ -1,0 +1,120 @@
+/* src/assets/styles/Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #ff4081, #ff9a44); /* Gradient background */
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sharp shadow */
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0; /* Align at the top */
+    left: 230px; /* Set left position to match sidebar width */
+    right: 0; /* Extend to the right edge */
+    z-index: 10; /* Ensure header is above other elements */
+}
+
+.header .logo {
+    font-size: 28px; /* Larger font size */
+    font-weight: bold;
+    letter-spacing: 1px; /* Letter spacing */
+    transition: transform 0.3s; /* Transition for logo */
+}
+
+.header .logo:hover {
+    transform: scale(1.05); /* Scale logo on hover */
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 25px; /* Increased gap between links */
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px; /* Increased padding for links */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+}
+
+.header .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Background change on hover */
+    transform: translateY(-2px); /* Lift link slightly on hover */
+}
+
+.header .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Gap between username and button */
+}
+
+.welcome-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+.welcome-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.welcome-card img {
+    border-radius: 50%;
+    width: 45px; /* Increased width */
+    height: 45px; /* Increased height */
+    object-fit: cover; /* Ensure image maintains aspect ratio */
+}
+
+.activity-status {
+    width: 10px; /* Width of the status indicator */
+    height: 10px; /* Height of the status indicator */
+    border-radius: 50%; /* Make it circular */
+    margin-left: 10px; /* Space between text and indicator */
+}
+
+.activity-status.active {
+    background-color: #4caf50; /* Green for active status */
+}
+
+.activity-status.inactive {
+    background-color: #f44336; /* Red for inactive status */
+}
+
+.header .user-info .username {
+    font-size: 18px; /* Larger font size */
+    font-weight: 500; /* Bold text */
+}
+
+/* Style for the logout button */
+.logout-button {
+    background-color: #ff4a4a; /* Background color for logout button */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for smooth effects */
+    display: flex; /* Align items in the center */
+    align-items: center; /* Center items vertically */
+}
+
+.logout-button:hover {
+    background-color: #d84343; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slightly lift the button on hover */
+}
+
+/* Optional: Adding an icon to the logout button */
+.logout-button img {
+    margin-right: 8px; /* Space between icon and text */
+    width: 20px; /* Width of the icon */
+    height: 20px; /* Height of the icon */
+}

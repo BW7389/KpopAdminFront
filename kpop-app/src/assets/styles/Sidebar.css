@@ -1,0 +1,86 @@
+/* src/assets/styles/Sidebar.css */
+
+.sidebar {
+    width: 210px; /* Width when expanded */
+    background-color: #ff4081; /* Background color */
+    color: white; /* Text color */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed position */
+    top: 0; 
+    left: 0; 
+    padding: 20px; 
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); 
+    transition: width 0.3s ease; 
+    display: flex;
+    flex-direction: column; /* Column layout */
+}
+
+.sidebar.collapsed {
+    width: 60px; /* Width when collapsed */
+}
+
+.toggle-btn {
+    font-size: 24px; /* Icon size */
+    margin-bottom: 20px; /* Space below toggle button */
+    cursor: pointer; /* Cursor on hover */
+    display: flex;
+    justify-content: center; /* Center icon */
+    align-items: center; /* Center icon vertically */
+    background-color: #e91e63; /* Background color for the toggle button */
+    border-radius: 50%; /* Rounded button */
+    width: 40px; /* Button width */
+    height: 40px; /* Button height */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.toggle-btn:hover {
+    background-color: #d81b60; /* Darker shade on hover */
+}
+
+.sidebar ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin-top: 20px; /* Space above list */
+}
+
+.sidebar li {
+    padding: 15px 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    display: flex; /* Flex layout for list items */
+    align-items: center; /* Center items vertically */
+}
+
+.sidebar li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.sidebar a {
+    color: white; 
+    text-decoration: none; 
+    display: block; 
+    white-space: nowrap; /* Prevent wrapping */
+    transition: color 0.3s; /* Transition for text color */
+}
+
+.sidebar a:hover {
+    color: #ffeb3b; /* Change text color on hover */
+}
+
+.sidebar.collapsed a {
+    overflow: hidden; 
+    text-overflow: ellipsis; /* Ellipsis for text overflow */
+}
+
+.sidebar .sidebar-footer {
+    position: absolute; 
+    bottom: 20px; 
+    left: 0; 
+    right: 0; 
+    text-align: center; 
+}
+
+.sidebar .sidebar-footer p {
+    font-size: 14px; 
+    color: #fff; 
+}

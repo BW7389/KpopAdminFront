@@ -1,0 +1,93 @@
+/* src/assets/styles/UserProfile.css */
+
+.user-profile {
+    padding: 30px;
+    background: linear-gradient(135deg, #ffe0f0 30%, #ff80ab 100%); /* Gradient background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); /* Enhanced shadow effect */
+    max-width: 800px; /* Limit maximum width */
+    margin: 30px auto; /* Center align with margin */
+    text-align: center; /* Center align text */
+}
+
+.user-profile h2 {
+    font-size: 36px; /* Increased font size for title */
+    color: #ff4081; /* K-pop inspired title color */
+    margin-bottom: 20px; /* Space below the title */
+    font-family: 'Noto Sans', sans-serif; /* Stylish font for title */
+}
+
+.profile-details {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center content */
+    margin-bottom: 20px; /* Space below profile info */
+}
+
+.profile-item {
+    display: flex; /* Flex for icon and text alignment */
+    align-items: center; /* Center items vertically */
+    margin: 0 20px; /* Space between items */
+    text-align: left; /* Left align text within item */
+}
+
+.profile-icon {
+    font-size: 24px; /* Icon size */
+    color: #ff4081; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.info-label {
+    font-weight: bold; /* Bold for labels */
+    color: #333; /* Dark color for labels */
+}
+
+.info-value {
+    color: #555; /* Gray color for values */
+    margin-top: 5px; /* Space above values */
+}
+
+.bio-section {
+    text-align: left; /* Left align bio section */
+    margin: 20px 0; /* Space above and below bio */
+}
+
+.bio-section .info-label {
+    font-weight: bold; /* Bold for bio label */
+}
+
+.profile-actions {
+    display: flex; /* Flex layout for buttons */
+    justify-content: center; /* Center align buttons */
+    margin-top: 30px; /* Space above actions */
+}
+
+.profile-actions button {
+    background-color: #ff4081; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    margin: 0 10px; /* Space between buttons */
+    font-size: 16px; /* Button text size */
+}
+
+.profile-actions button:hover {
+    background-color: #e91e63; /* Lighter pink on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.profile-actions .delete-button {
+    background-color: #f44336; /* Red color for delete button */
+}
+
+.profile-actions .delete-button:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+.error-message {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center align error messages */
+    margin-top: 15px; /* Space above error messages */
+}
