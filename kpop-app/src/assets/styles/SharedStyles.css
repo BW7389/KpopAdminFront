@@ -1,0 +1,32 @@
+/* src/assets/styles/SharedStyles.css */
+.kpop-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .kpop-input:focus {
+    outline: none;
+    border-color: #ff6ad5;
+  }
+  
+  .kpop-button {
+    background-color: #6a5aff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kpop-button:hover {
+    background-color: #ff6ad5;
+  }
+  
